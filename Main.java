@@ -51,6 +51,10 @@ public class Main {
         System.out.println("Student added successfully.");
 
     }
+    public static void displayStudents() {
+        
+    }
+
 
 }
 
