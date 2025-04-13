@@ -61,6 +61,13 @@ public class Main {
         }
     }
     public static void searchStudent() {
+        System.out.println("Search by: ");
+        System.out.println("1. PRN");
+        System.out.println("2. Name");
+        System.out.println("3. Position");
+        System.out.print("Choose an option: ");
+        int option = sc.nextInt();
+        sc.nextLine(); 
     }
 
 
