@@ -38,6 +38,13 @@ public class Main {
         if (!prn.matches("[A-Za-z0-9]+")) {
             throw new InvalidPRNException("Invalid PRN format.");
         }
+        System.out.print("Enter Name: ");
+        String name = sc.nextLine();
+        System.out.print("Enter Date of Birth: ");
+        String dob = sc.nextLine();
+        System.out.print("Enter Marks: ");
+        double marks = sc.nextDouble();
+        
     }
 
 }
