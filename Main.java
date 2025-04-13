@@ -92,6 +92,14 @@ public class Main {
         }
     }
     public static void searchByPrn(String prn) {
+        for (Student student : students) {
+            if (student.getPrn().equals(prn)) {
+                System.out.println(student);
+                return;
+            }
+        }
+        System.out.println("Student not found.");
+
     }
 
 
