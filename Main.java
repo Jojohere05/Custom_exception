@@ -44,7 +44,9 @@ public class Main {
         String dob = sc.nextLine();
         System.out.print("Enter Marks: ");
         double marks = sc.nextDouble();
-        
+        if (marks < 0) {
+            throw new NegativeMarksException("Marks cannot be negative.");
+        }
     }
 
 }
