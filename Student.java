@@ -15,4 +15,7 @@ public class Student {
     public void setPrn(String prn) {
         this.prn = prn;
     }
+    public String getName() {
+        return name;
+    }
 }
