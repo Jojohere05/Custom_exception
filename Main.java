@@ -140,9 +140,19 @@ public class Main {
         System.out.println("Student not found.");
     }
     public static void deleteStudent() {
-        
+        System.out.print("Enter PRN to delete: ");
+        String prn = sc.nextLine();
+        for (Student student : students) {
+            if (student.getPrn().equals(prn)) {
+                students.remove(student);
+                System.out.println("Student deleted successfully.");
+                return;
+            }
+        }
+        System.out.println("Student not found.");
+    }
     }
 
-}
+
 
 
