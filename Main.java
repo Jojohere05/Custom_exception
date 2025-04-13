@@ -31,7 +31,15 @@ public class Main {
 
         }
     }
-    public static void addStudent() throws InvalidPRNException, NegativeMarksException {
+    public static void addStudent() throws InvalidPRNException, NegativeMarksException{
+        System.out.print("Enter PRN: ");
+        String prn = sc.nextLine();
+        // Validate PRN format (assuming a simple validation rule for demonstration)
+        if (!prn.matches("[A-Za-z0-9]+")) {
+            throw new InvalidPRNException("Invalid PRN format.");
+        }
+    }
+
 }
 
 
