@@ -118,6 +118,26 @@ public class Main {
         }
     }
     public static void updateStudent() throws InvalidPRNException, NegativeMarksException {
+        System.out.print("Enter PRN to update: ");
+        String prn = sc.nextLine();
+        for (Student student : students) {
+            if (student.getPrn().equals(prn)) {
+                System.out.print("Enter new Name: ");
+                student.setName(sc.nextLine());
+                System.out.print("Enter new DoB: ");
+                student.setDob(sc.nextLine());
+                System.out.print("Enter new Marks: ");
+                double marks = sc.nextDouble();
+
+                if (marks < 0) {
+                    throw new NegativeMarksException("Marks cannot be negative.");
+                }
+                student.setMarks(marks);
+                System.out.println("Student updated successfully.");
+                return;
+            }
+        }
+        System.out.println("Student not found.");
 
     }
 
