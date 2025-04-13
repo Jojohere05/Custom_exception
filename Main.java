@@ -102,7 +102,13 @@ public class Main {
 
     }
     public static void searchByName(String name) {
-        
+        for (Student student : students) {
+            if (student.getName().equalsIgnoreCase(name)) {
+                System.out.println(student);
+                return;
+            }
+        }
+        System.out.println("Student not found.");
     }
 
 
