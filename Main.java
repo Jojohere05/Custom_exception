@@ -47,6 +47,9 @@ public class Main {
         if (marks < 0) {
             throw new NegativeMarksException("Marks cannot be negative.");
         }
+        students.add(new Student(prn, name, dob, marks));
+        System.out.println("Student added successfully.");
+
     }
 
 }
