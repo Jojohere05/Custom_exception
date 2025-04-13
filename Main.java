@@ -111,7 +111,11 @@ public class Main {
         System.out.println("Student not found.");
     }
     public static void searchByPosition(int position) {
-        
+        if (position < 1 || position > students.size()) {
+            System.out.println("Invalid position.");
+        } else {
+            System.out.println(students.get(position - 1));
+        }
     }
 
 
