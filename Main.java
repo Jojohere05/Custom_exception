@@ -15,10 +15,23 @@ public class Main {
             System.out.print("Choose an option: ");
             int choice = sc.nextInt();
             sc.nextLine();
-           t
+            try{
+                switch (choice) {
+                    case 1: addStudent(); break;
+                    case 2: displayStudents(); break;
+                    case 3: searchStudent(); break;
+                    case 4: updateStudent(); break;
+                    case 5: deleteStudent(); break;
+                    case 6: System.exit(0);
+                    default: System.out.println("Invalid option. Try again.");
+                }  
+            }catch (InvalidPRNException | NegativeMarksException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+
         }
     }
-
+    public static void addStudent() throws InvalidPRNException, NegativeMarksException {
 }
 
 
