@@ -12,5 +12,7 @@ public class Student {
     public String getPrn() {
         return prn;
     }
-
+    public void setPrn(String prn) {
+        this.prn = prn;
+    }
 }
