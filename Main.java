@@ -138,7 +138,9 @@ public class Main {
             }
         }
         System.out.println("Student not found.");
-
+    }
+    public static void deleteStudent() {
+        
     }
 
 }
