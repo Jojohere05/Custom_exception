@@ -68,6 +68,26 @@ public class Main {
         System.out.print("Choose an option: ");
         int option = sc.nextInt();
         sc.nextLine(); 
+        try {
+            switch (option) {
+                case 1: 
+                    System.out.print("Enter PRN: ");
+                    String prn = sc.nextLine();
+                    searchByPrn(prn);
+                    break;
+                case 2: 
+                    System.out.print("Enter Name: ");
+                    String name = sc.nextLine();
+                    searchByName(name);
+                    break;
+                case 3: 
+                    System.out.print("Enter Position: ");
+                    int position = sc.nextInt();
+                    searchByPosition(position);
+                    break;
+                default: System.out.println("Invalid choice.");
+            }
+        } 
     }
 
 
