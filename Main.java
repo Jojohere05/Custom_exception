@@ -52,7 +52,13 @@ public class Main {
 
     }
     public static void displayStudents() {
-        
+        if (students.isEmpty()) {
+            System.out.println("No students to display.");
+        } else {
+            for (Student student : students) {
+                System.out.println(student);
+            }
+        }
     }
 
 
