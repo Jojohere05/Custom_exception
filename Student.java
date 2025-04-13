@@ -27,5 +27,7 @@ public class Student {
     public void setDob(String dob) {
         this.dob = dob;
     }
-
+    public double getMarks() {
+        return marks;
+    }
 }
