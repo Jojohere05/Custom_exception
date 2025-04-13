@@ -117,7 +117,9 @@ public class Main {
             System.out.println(students.get(position - 1));
         }
     }
+    public static void updateStudent() throws InvalidPRNException, NegativeMarksException {
 
+    }
 
 }
 
