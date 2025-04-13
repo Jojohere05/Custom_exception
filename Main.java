@@ -87,7 +87,9 @@ public class Main {
                     break;
                 default: System.out.println("Invalid choice.");
             }
-        } 
+        }catch (Exception e) {
+            System.out.println("Error while searching: " + e.getMessage());
+        }
     }
 
 
